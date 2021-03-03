@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 export default class FilterObject extends Component {
-      component () {
+      constructor () {
         super();
         this.state = {
         employees: [
@@ -10,9 +10,9 @@ export default class FilterObject extends Component {
             title: 'Guy',
             age: 31,
           }
-        ]
+        ],
         userInput: '',
-        filteredEmployees: [];
+        filteredEmployees: []
       }
       }
       render() {
@@ -25,5 +25,6 @@ export default class FilterObject extends Component {
         <span className='resultsBox filterObjectRB'> Filtered: { JSON.stringify(this.state.filteredEmployees, null, 10) } </span>
       </div>
   
-  )
-}
+       )
+        }
+      }
